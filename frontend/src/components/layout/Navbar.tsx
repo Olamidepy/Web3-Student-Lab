@@ -22,6 +22,7 @@ export default function Navbar() {
     { name: "IDEAS", path: "/ideas" },
     { name: "VERIFY", path: "/verify" },
     { name: "AIRDROP", path: "/airdrop" },
+    { name: "JOURNAL", path: "/blog" },
     { name: "DEVTOOLS", path: "/devtools/events" },
   ];
 

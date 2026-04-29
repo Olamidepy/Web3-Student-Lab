@@ -5,7 +5,7 @@
 //! Activity logs are append-only and cannot be modified once stored.
 
 use soroban_sdk::{
-    Address, BytesN, Env, Vec,
+    contracttype, Address, BytesN, Env, Vec,
 };
 
 // Activity log entry stored on-chain.

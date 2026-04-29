@@ -23,8 +23,11 @@ pub mod verification;
 // #[cfg(test)]
 // pub mod fuzz;
 pub mod token;
+pub mod upgrade;
 pub mod airdrop_manager;
 pub mod merkle_distributor;
+pub mod blogging_platform;
+pub mod content_monetization;
 
 use crate::revocation::{CertificateState, CertificateStatus, RevocationReason, RevocationRecord};
 use crate::token::RsTokenContractClient;

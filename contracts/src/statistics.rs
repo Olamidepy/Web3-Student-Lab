@@ -4,7 +4,7 @@
 //! All statistics are tracked on-chain and can be queried for analytics dashboards.
 
 use soroban_sdk::{
-    Address, BytesN, Env,
+    contracttype, Address, BytesN, Env,
 };
 
 use crate::activity_log::ActivityLogManager;
