@@ -210,13 +210,6 @@ export default function DashboardPage() {
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[120px] pointer-events-none"></div>
 
       {/* Navigation Layer */}
-      <nav className="relative z-20 bg-bg-secondary/80 backdrop-blur-md border-b border-border-theme sticky top-0">
-    <div className="min-h-screen bg-black text-white selection:bg-red-600 selection:text-white pb-20 relative overflow-hidden">
-      {/* Background glows */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-red-600/5 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-red-600/5 rounded-full blur-[120px] pointer-events-none"></div>
-
-      {/* Nav */}
       <nav className="relative z-20 bg-zinc-950/80 backdrop-blur-md border-b border-white/10 sticky top-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
@@ -500,18 +493,17 @@ export default function DashboardPage() {
                   →
                 </span>
               </Link>
-            </div>
-            </div>
-            <WithSkeleton
-              isLoading={isLoading}
-              skeleton={
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <CertCardSkeleton />
-                  <CertCardSkeleton />
-                  <CertCardSkeleton />
-                </div>
-              }
-            >
+          </div>
+          <WithSkeleton
+            isLoading={isLoading}
+            skeleton={
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CertCardSkeleton />
+                <CertCardSkeleton />
+                <CertCardSkeleton />
+              </div>
+            }
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certificates.slice(0, 3).map((cert, index) => (
                 <Link
@@ -555,9 +547,9 @@ export default function DashboardPage() {
                 </Link>
               ))}
             </div>
-            </WithSkeleton>
-          </div>
-        )}
+          </WithSkeleton>
+        </div>
+      )}
 
         {/* Audit Logs Section */}
         <div className="mt-20 [content-visibility:auto] [contain-intrinsic-size:1px_500px]">
